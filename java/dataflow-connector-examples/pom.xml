@@ -179,6 +179,10 @@ limitations under the License.
                 <argument>--bigtableTableId=${bigtable.table}</argument>
                 <argument>--stagingLocation=${gs}/staging</argument>
                 <argument>--resultLocation=${gs}/count</argument>
+                <argument>--autoscalingAlgorithm=THROUGHPUT_BASED</argument>
+                <argument>--numWorkers=3</argument>
+                <argument>--maxNumWorkers=20</argument>
+                <argument>--workerMachineType=n1-standard-4</argument>
               </arguments>
             </configuration>
           </plugin>
